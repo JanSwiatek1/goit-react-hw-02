@@ -5,7 +5,7 @@ import { Stat } from './components/solarSystem/statistics'
 import { Section } from './components/solarSystem/section'
 import { Notification } from './components/solarSystem/notification'
 import { SetButtons } from './components/solarSystem/buttons'
-import { countTotalFeedback } from './components/solarSystem/percent'
+
 
 const App = ({ initialValue = 0 }) => {
 
@@ -52,7 +52,7 @@ const App = ({ initialValue = 0 }) => {
               neutral={neutral}
               bad={bad}
               total={total}
-              positivePercentage={PercentValue()}
+              positivePercentage={PercentValue}
             />
           
         ) : (
