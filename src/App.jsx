@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-// import { AlT } from './components/solarSystem/other'
 import { Stat } from './components/solarSystem/statistics'
 import { Section } from './components/solarSystem/section'
 import { Notification } from './components/solarSystem/notification'
@@ -31,8 +30,10 @@ const App = ({ initialValue = 0 }) => {
   //   return good + neutral + bad;
   // };
 
-    const PercentValue = () => {
-      const { good } = this.state;
+  const PercentValue = () => {
+      console.log('Im here');
+      
+      //let { good } = this.state;
       return total === 0 ? 0 : Math.round((good / total) * 100);
   };
   
@@ -52,7 +53,7 @@ const App = ({ initialValue = 0 }) => {
               neutral={neutral}
               bad={bad}
               total={total}
-              positivePercentage={PercentValue}
+              PercentValue={PercentValue}
             />
           
         ) : (
