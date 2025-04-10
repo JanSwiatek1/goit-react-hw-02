@@ -43,7 +43,8 @@ const App = ({ initialValue = 0 }) => {
 
   return (
     <>
-      <Section title="Please leave feedback"></Section>
+      <Section title="Sip Happens Café"></Section>
+      <p>Please leave your feedback about our service by selecting one of the options below.</p>
       <SetButtons IncrementGood={IncrementGood} IncrementNeutral={IncrementNeutral} IncrementBad={IncrementBad} />
       <Section title="Statistics">
         {total > 0 ? (
